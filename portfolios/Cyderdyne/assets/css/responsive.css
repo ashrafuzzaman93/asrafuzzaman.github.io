@@ -1,0 +1,172 @@
+/* Smartphones (portrait and landscape) ———– */
+
+@media only screen and (min-width : 320px) and (max-width : 667px) {
+	/* Styles */
+	.logo {
+		text-align: center;
+	}
+	#header .navbar-brand {
+		display: block;
+		font-size: 14px;
+	}
+	.nw-latter{
+		padding: 10px;
+		margin: 0;
+	}
+	.support{
+		margin: 5px 10px 10px 10px;
+	}
+	.social-network{
+		margin: 10px;
+	}
+
+	.brand-slider{
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	.navbar-toggler{
+		border: none;
+	}
+	.brand-services {
+	    width: 100%;
+	    overflow: hidden;
+	    float: none;
+	}
+	.brand-services-single-item {
+	    width: 100%;
+	    float: none;
+	    height: 83px;
+	    margin: 0;
+	}
+	
+	.brand-services-single-item a { 
+		border-bottom: 1px solid #ccc;
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+	}
+	.concern .area-title{
+		left: 15px;
+	}
+	footer p{
+		font-size: 15px;
+		line-height: 1.5em;
+	}
+
+}
+
+ 
+
+/* Smartphones (landscape) ———– */
+
+@media only screen and (min-width : 321px) {
+
+/* Styles */
+
+}
+
+ 
+
+/* Smartphones (portrait) ———– */
+
+@media only screen and (max-width : 320px) {
+
+/* Styles */
+
+}
+
+ 
+
+/* iPads (portrait and landscape) ———– */
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+/* Styles */
+	.brand-slider{
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	.brand-services {
+	    width: 100%;
+	    overflow: hidden;
+	    float: none;
+	}
+	.brand-services-single-item {
+	    width: 33.33%;
+	    height: 83px;
+	    margin: 0;
+	}
+
+}
+@media only screen and (min-width : 768px) and (max-width : 1920px) {
+	.concern-single{
+		margin-top: 20px;
+	}
+}
+ 
+
+/* iPads (landscape) ———– */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+/* Styles */
+
+}
+
+ 
+
+/* iPads (portrait) ———– */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+/* Styles */
+
+}
+
+/**********
+
+iPad 3
+
+**********/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+/* Styles */
+
+}
+
+ 
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+
+/* Styles */
+
+}
+
+/* Desktops and laptops ———– */
+
+@media only screen  and (min-width : 1224px) {
+
+/* Styles */
+
+}
+
+ 
+
+/* Large screens ———– */
+
+@media only screen  and (min-width : 1824px) {
+
+/* Styles */
+
+}
+
+@media only screen and (min-device-width : 768px) {
+
+	/* Styles */
+	.dropdown:hover>.dropdown-menu {
+	  display: block;
+	}
+}
