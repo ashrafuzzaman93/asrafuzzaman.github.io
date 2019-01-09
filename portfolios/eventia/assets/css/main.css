@@ -86,5 +86,78 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+.ev-wlc-cal-details{
+	position: relative;
+	z-index: 1;
+}
+.ev-wlc-cal-details:after{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #313131;
+	opacity: .7;
+	content: '';
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+ul.ev-countdown li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #fff;
+}
+ul.ev-countdown {
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.en-cal {
+    text-align: center;
+}
+.ev-volume{
+    margin-top: 60px;
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: #313131;
+    background-image: url("../images/bg-line.png");
+    background-repeat: no-repeat;
+	/*background-size: cover;*/
+	/*background-position: center center; */
+	text-align: center;
+}
+.ev-volume .ev-seats, .ev-volume .ev-speaker{
+    width: 50%;
+    float: left;
+}
+.ev-sponsor	{
+	text-align: center;
+	padding: 30px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d42531+33,db7a3b+66 */
+	background: #d42531; /* Old browsers */
+	background: -moz-linear-gradient(left, #d42531 33%, #db7a3b 66%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #d42531 33%,#db7a3b 66%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #d42531 33%,#db7a3b 66%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d42531', endColorstr='#db7a3b',GradientType=1 ); /* IE6-9 */
+}
+.ev-wlc-cal-details footer{
+	padding: 15px;
+}
+.ev-seats, .ev-speaker {
+	position: relative;
+}
+.ev-seats span, .ev-speaker span {
+    background: #444444;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    line-height: 82px;
+}
 
+.ev-seats span img, .ev-speaker span img {
+    max-width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
