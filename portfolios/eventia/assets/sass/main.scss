@@ -54,7 +54,7 @@ h1{
 	font-family: $ev-font-h1;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 77px;
+	font-size: 75px;
 	line-height: 74px;
 }
 h2{
@@ -75,10 +75,27 @@ p{ font-size: 1em; line-height: 1.5em }
 
 
 /* Header */
-#ed-header{
-	display: none;
+#ev-header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2
+}
+.navbar-nav li a {
+	color: #fff;
+}
+#ev-header-sticky-wrapper {
+    position: absolute;
+    width: 100%;
 }
 
+.is-sticky #ev-header{
+	z-index: 9 !important;
+	background: #444444;
+}
+
+/* Welcome */
 .ev-wlc-area{
 	position: relative;
 	height: 100%;
@@ -87,6 +104,107 @@ p{ font-size: 1em; line-height: 1.5em }
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+}
+.ev-wlc-lef-content {
+    padding-top: 280px;
+    color: #fff;
+    h1 > span.text-big{
+    	font-size: 147px;
+    }
+    > p:first-child{
+		font-family: $ev-font-Os;
+		font-size: 36px;
+		font-weight: 300;
+		margin-bottom: 30px;
+    }
+}
+.ev-wlc-cal-details{
+	position: relative;
+	z-index: 1;
+	margin-top: 100px;
+	&:after{
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: #313131;
+		opacity: .7;
+		content: '';
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	footer{
+		padding: 15px;	
+	}
+	.ev-cal-bar{
+		background: #3f3f3f;
+		width: 100%;
+		height: 15px;
+		display: block;
+		z-index: 1;
+		-webkit-box-shadow: 0px 5px 12px -2px #000000; 
+		box-shadow: 0px 5px 12px -2px #000000;
+	}
+}
+.ev-countdown {
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.ev-countdown li{
+	display: inline-block;
+    margin-right: 30px;
+    color: #fff;
+}
+.en-cal {
+    padding: 50px 0;
+    text-align: center;
+}
+.ev-volume{
+    overflow: hidden;
+    position: relative;
+    padding: 50px 0;
+    background-color: #313131;
+    background-image: url("../images/bg-line.png");
+    background-repeat: no-repeat;
+	> .media {
+		width: 50%;
+		float: left;
+		padding-left: 12%;
+		> span {
+			width: 60px;
+		    height: 60px;
+		    text-align: center;
+		    line-height: 88px;
+		    border-radius: 50%;
+		    background: #444444;
+		    overflow: hidden;
+		}
+	}
+	&:after{
+        position: absolute;
+	    width: 01px;
+	    height: 80%;
+	    content: '';
+	    left: 50%;
+	    top: 10%;
+	    background-image: url(../images/border.png);
+	}
+}
+.ev-seats-icon, .ev-seats-content, .ev-speaker-icon, .ev-speaker-content {
+    width: 50%;
+    float: left;
+}
+.ev-sponsor{
+	text-align: center;
+	padding: 30px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d42531+33,db7a3b+66 */
+	background: #d42531; /* Old browsers */
+	background: -moz-linear-gradient(left, #d42531 33%, #db7a3b 66%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #d42531 33%,#db7a3b 66%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #d42531 33%,#db7a3b 66%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d42531', endColorstr='#db7a3b',GradientType=1 ); /* IE6-9 */
 }
 
 
