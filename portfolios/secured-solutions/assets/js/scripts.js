@@ -6,9 +6,6 @@ $(function () {
 	$('.offcanvas-collapse').toggleClass('open')
 	})
 
-  /* Sticky Header */
-  $("#ev-header").sticky({topSpacing:0});
-
 
   $('body').on('mouseenter mouseleave','.dropdown-hover',function(e){
      let dropdown=$(e.target).closest('.dropdown-hover');
