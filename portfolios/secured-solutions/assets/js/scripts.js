@@ -22,6 +22,7 @@ $(function () {
       margin:0,
       nav:false,
       dots: false,
+      autoplay: true
   })
   $('.ss-brand-logo-slider').owlCarousel({
       items: 6,
