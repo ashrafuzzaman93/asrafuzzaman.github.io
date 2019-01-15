@@ -46,6 +46,9 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+a, a:hover{
+	text-decoration: none;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -68,11 +71,20 @@ h3, h4, h5, h6{
 	text-transform: uppercase;
 	font-weight: 700;
 }
-h3{ font-size: 49px; }
+h3{ font-size: 40px; line-height: 50px; }
 h4{ font-size: 21px; }
 h5{ font-size: 13.61px; }
 p{ font-size: 1em; line-height: 1.5em }
-
+.section-padding{
+	padding: 100px 0;
+}
+.in-color{
+	display: inline-block;
+	color: #ff512f;
+}
+.text-black{
+	color: #000;
+}
 
 /* Header */
 #ev-header{
@@ -99,8 +111,9 @@ p{ font-size: 1em; line-height: 1.5em }
 .ev-wlc-area{
 	position: relative;
 	height: 100%;
+	overflow: hidden;
 	background-color: #444444;
-	background-image: url('../images/bg01.jpg');
+	background-image: url('../images/bg00.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -207,4 +220,27 @@ p{ font-size: 1em; line-height: 1.5em }
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d42531', endColorstr='#db7a3b',GradientType=1 ); /* IE6-9 */
 }
 
+
+/* About */
+
+.ev-tile-image{
+	height: 380px;
+	width: 100%;
+	border: 1px solid #505050;
+	position: relative;
+
+	&:after {
+	    position: absolute;
+	    left: 30px;
+	    top: 30px;
+	    width: 100%;
+	    height: 100%;
+	    background-image: url('../images/bg02.jpg'); ;
+	    background-color: #444444;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center center;
+	    content: '';
+	}
+}
 
