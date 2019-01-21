@@ -1,0 +1,23 @@
+/* BANNER AREA CSS */
+.wp-erp-banner-box{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding: 40px 70px;
+	margin-top: -33px;
+	border-radius: $radius;
+	z-index: 2;
+	@extend %shadow;
+	> img, h3 {
+		display: inline-block;
+	}
+	> img{
+		margin-right: 10px;
+		float: left;
+	}
+	h3{
+		margin-top: 25px;
+		color: #b7bec2;
+	}
+}

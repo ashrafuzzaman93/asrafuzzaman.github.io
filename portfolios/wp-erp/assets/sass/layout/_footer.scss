@@ -1,0 +1,56 @@
+/* FOOTER WIDGETS AREA CSS */
+.wp-erp-footer-widgets{
+	.wp-erp-widget{
+		margin-bottom: 20px;
+		ul{
+			li{
+				a{
+					padding-bottom: 10px;
+					display: inline-block;
+					font-size: $font-size;
+				}
+				&:last-child a{
+					padding-bottom: 0;
+				}
+			}
+		}
+		.wp-erp-btn-fill{
+			@include buttonFill( #2b62c9, #fff, #2b62c9, #fff );
+			font-weight: 700;
+		}
+	}
+}
+
+/* FOOTER AREA CSS */
+.wp-erp-footer{
+	width: 100%;
+	background: #f2f6f8;
+	border: 1px solid #dce7f1;
+	padding: 27px 0;
+	p{
+		margin: 0;
+	}
+	.wp-erp-social-networks{
+		ul{
+			li{
+				display: inline;
+				a{
+					margin-right: 15px;
+					@include transition( .3s );
+					&.fab:hover{
+						color: #0c87fb;
+					}
+					&.twi:hover{
+						color: #1da1f2;
+					}
+					&.you:hover{
+						color: #ff0000;
+					}
+					&.goo:hover{
+						color: #dd4b39;
+					}
+				}
+			}
+		}
+	}
+}

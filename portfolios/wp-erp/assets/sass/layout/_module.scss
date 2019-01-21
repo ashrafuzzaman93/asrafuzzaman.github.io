@@ -1,0 +1,135 @@
+/* MODULE AREA CSS */
+.module-bg-color{
+	background: #f5f7f3;
+	border-top: 1px solid #dce7f1;
+	border-bottom: 1px solid #dce7f1;
+}
+.wp-erp-module-area{
+	.wp-erp-module-desc{
+		> p{
+			margin-bottom: 38px;
+		}
+	}
+	.wp-er-module-image{
+		margin-left: -210px;
+		.wp-erp-module-badge {
+		    position: absolute;
+		    width: 121px;
+		    height: 116px;
+		    right: -46px;
+		    top: -60px;
+		}
+		.wp-erp-module-pulsing{
+			position: absolute;
+		    width: 80px;
+		    height: 80px;
+    		top: -43px;
+		    right: -24px;
+		    @include iconGradient( #059af6, #18c4f3 );
+		    line-height: 95px;
+		    text-align: center;
+		    border-radius: 30px;
+		    animation: shadow-pulse 2.5s infinite;
+		}
+		@keyframes shadow-pulse
+		{
+		     0% {
+		          box-shadow: 0 0 0 0px rgba(#059af6, 0.4);
+		     }
+		     100% {
+		          box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+		     }
+		}
+		> img{
+			max-width: 100%;
+			@extend %shadow;
+			border-radius: $radius;
+		}
+	}
+}
+.wp-erp-toggle{
+	.card {
+		background: #fff;
+		margin-bottom: 10px;
+		border: 2px solid #f4ede5;
+		/*padding: 15px 30px;*/
+		.card-header {
+		    background: #fff;
+		    border: none;
+		    padding: 0;
+		    h4{
+		    	a{
+		    		padding: 15px 30px;
+		    		display: block;
+		    		color: #1b1b1b;
+		    		&:hover{
+		    			color: #1b1b1b;
+		    		}
+		    		.wp-erp-toggle-icon{
+		    			width: 40px;
+		    			height: 40px;
+		    			display: inline-block;
+		    			line-height: 40px;
+		    			text-align: center;
+		    			color: #fff;
+		    			font-size: 15px;
+		    			border-radius: 50%;
+		    			@extend %shadow;
+		    			margin-right: 25px;
+		    			@include iconGradient( #8d78fa, #c878fe );
+		    		}
+		    	}
+		    }
+		}
+		.card-body{
+			padding-top: 0;
+			padding-left: 98px;
+		}
+	}
+	.card:nth-child(2){
+		.card-header{
+			h4{
+				a{
+					.wp-erp-toggle-icon{
+						@include iconGradient( #18d5e0, #47f1b0 );
+					}
+				}
+			}
+		}
+	}
+	.card:last-child{
+		.card-header{
+			h4{
+				a{
+					.wp-erp-toggle-icon{
+						@include iconGradient( #fd8784, #ffa277 );
+					}
+				}
+			}
+		}
+	}
+}
+.hrm-btn{
+	.wp-erp-btn-fill{
+		@include buttonFill( #dde7d7, #458200, #458200, #fff );
+		font-weight: 700;
+	}
+}
+.crm-btn{
+	.wp-erp-btn-fill{
+		@include buttonFill( #e0e8f7, #2b62c9, #2b62c9, #fff );
+		font-weight: 700;
+	}
+}
+.acc-btn{
+	.wp-erp-btn-fill{
+		@include buttonFill( #eae3dc, #ba8c61, #ba8c61, #fff );
+		font-weight: 700;
+	}
+}
+.pms-btn{
+	.wp-erp-btn-fill{
+		@include buttonFill( #e0e8f7, #2b62c9, #2b62c9, #fff );
+		font-weight: 700;
+	}
+}

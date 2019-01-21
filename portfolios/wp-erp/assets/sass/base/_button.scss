@@ -1,0 +1,25 @@
+/* WP ERP Button */
+.wp-erp-btn{
+	display: inline-block;
+	padding: 15px 5px;
+	color: $color;
+	font-size: $font-size;
+	font-weight: normal;
+	line-height: 18px;
+	text-transform: capitalize;
+	@include transition( .2s );
+	> i {
+		margin-right: 5px;
+		font-size: 14px;
+	}
+	&:hover{
+		color: #fff;
+	}
+	&.active-btn{
+		background: #14d6e8;
+		@extend %shadow;
+	}
+}
+.wp-erp-btn-fill{
+	@include buttonFill(#37b6ff, #fff, #00e9ff, #fff);
+}
