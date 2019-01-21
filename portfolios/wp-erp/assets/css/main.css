@@ -641,7 +641,7 @@ input[type=text] {
         color: #dd4b39; }
 
 /* Responsive styles */
-@media only screen and (min-width: 360px) and (max-width: 991px) {
+@media only screen and (min-width: 320px) and (max-width: 991px) {
   /* Styles */
   .wp-erp-header-area .navbar .wp-erp-btn {
     display: block;
@@ -661,6 +661,8 @@ input[type=text] {
     padding-top: 0; }
     .wp-erp-wel-area .wp-erp-wel-content h1 br {
       display: none; }
+    .wp-erp-wel-area .wp-erp-wel-content .wp-erp-btn {
+      margin-bottom: 1rem; }
   .wp-erp-wel-area .wp-erp-home-thumb {
     margin: 50px 0 0 0;
     padding: 30px; }
@@ -694,7 +696,7 @@ input[type=text] {
 
   .wp-erp-reviews-block {
     margin-bottom: 25px; } }
-@media only screen and (min-width: 360px) and (max-width: 667px) {
+@media only screen and (min-width: 320px) and (max-width: 667px) {
   .wp-erp-wel-area .wp-erp-wel-content h1 {
     font-size: 36px;
     line-height: 50px; }
