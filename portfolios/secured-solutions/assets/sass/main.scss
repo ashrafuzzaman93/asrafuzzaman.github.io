@@ -65,8 +65,67 @@ h3{
 	font-size: 24px;
 	font-weight: normal;
 }
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #abacac;
+	line-height: 22px;
+}
 .ss-line-height{
 	line-height: 10px;
+}
+
+// Button 
+.btn{
+	color: $primary-color;
+	padding: 10px 40px;
+	display: inline-block;
+	transition: all .3s;
+	letter-spacing: .05px;
+
+	&-theme {
+		color: #fff;
+		background: $primary-color;
+		text-transform: uppercase;
+		font-weight: 700;
+		border-radius: 30px;
+
+		&:hover {
+			background: #0f6db6;
+			color: #fff;
+		}
+	}
+}
+
+// form 
+input[type='text'],
+input[type='email'],
+textarea{
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 2px solid #abacac;
+	border-left: 0;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	transition: all .3s;
+
+	&:focus{
+		outline: 0;
+		border-bottom: 2px solid #61bc47;
+	}
+
+	&:hover{
+		border-bottom: 2px solid #61bc47;
+	}
+}
+input[type='submit'] {
+	margin-bottom: 0;
+}
+
+input::placeholder, textarea::placeholder{
+	color: #abacac;
+	font-size: 18px;
+	font-weight: normal;
 }
 
 /* Top Header */
@@ -79,7 +138,7 @@ h3{
 	padding: 10px;
 	position: relative;
 	text-align: right;
-	p {
+	span {
 		display: inline-block;
 		margin-right: 10px;
 		font-size: 14px;
@@ -384,4 +443,81 @@ footer{
 	padding: 15px 0;
 	text-align: center;
 	color: #fff;
+}
+
+/* 
+* Contact Us Page
+*/
+.contact-page{
+	
+	#ss-header{
+		position: inherit;
+	    background-image: url(../images/bg01.jpg);
+	    padding: 20px 0 15px 0;
+	    background-size: cover;
+	    background-position: center center;
+	}
+
+	.navbar-brand{
+		margin-top: -15px;
+	}
+
+	#ss-contact-section {
+		padding: 60px 0 40px 0;
+		background: #fff;
+	}
+
+	.contact-form{
+		.input-inline-group{
+			display: flex;
+			justify-content: space-between;
+
+			input[type='text'],
+			input[type='email']{
+				max-width: 48%;
+				flex-basis: 48%;
+			}
+		}
+		textarea{
+			width: 100%;
+		}
+	}
+
+	.ss-faq-section{
+		background: #f4f5f9;
+		padding: 60px 0;
+	}
+
+	.card-header {
+	    background: #f4f5f9;
+	    border: 0;
+	    padding: 0;
+	    padding-bottom: 15px;
+	    position: relative;
+	}
+
+	.card {
+	    border: 0;
+	    background: #f4f5f9;
+	    margin-bottom: 15px;
+	    border-bottom: 1px solid #ccc !important;
+	}
+
+	.card-body {
+	    padding: 0;
+	    padding-bottom: 15px;
+	}
+	.card-header h4{
+	    position: relative;
+	}
+	.card-header h4::after {
+	    position: absolute;
+	    right: 0;
+	    top: -4px;
+	    line-height: 100%;
+	}
+	.card-header h4::after {
+	    content: '+';
+	}
+
 }
